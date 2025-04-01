@@ -1,0 +1,96 @@
+.footer {
+    background-color: #01081a; /* Equivalent to bg-gray-900 */
+    color: white;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    
+  }
+  
+  .footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-section {
+      text-align: left;
+    }
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .footer-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .footer-subtitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .footer-links {
+    margin-top: 0.5rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-links a:hover {
+    color: #60a5fa; /* Equivalent to hover:text-blue-400 */
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .footer-social a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .facebook { color: #1877f2; } /* Facebook Blue */
+  .instagram { color: #e4405f; } /* Instagram Pink */
+  .twitter { color: #1da1f2; } /* Twitter Blue */
+  
+  .facebook:hover { color: #3b82f6; } /* hover:text-blue-400 */
+  .instagram:hover { color: #ec4899; } /* hover:text-pink-400 */
+  .twitter:hover { color: #93c5fd; } /* hover:text-blue-300 */
+  
+  .footer-copyright {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+  }
+  

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./Testimonials.css"; // Import CSS file
 
 const testimonials = [
   {
@@ -27,37 +28,31 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-20 bg-gray-50 px-6 md:px-12">
+    <section id="testimonials" className="testimonials">
       <motion.div
-        className="container mx-auto text-center"
+        className="testimonials-container"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-4xl font-bold text-gray-800 uppercase">
-          What Our Clients Say
-        </h2>
-        <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        <h2>What Our Clients Say</h2>
+        <p className="testimonials-description">
           Real stories from our satisfied members.
         </p>
 
         {/* Testimonials Grid */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="testimonials-grid">
           {testimonials.map((testimonial) => (
             <motion.div
               key={testimonial.id}
-              className="bg-white p-6 rounded-lg shadow-lg"
+              className="testimonial-card"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: testimonial.id * 0.2 }}
             >
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-16 h-16 rounded-full mx-auto mb-4 border-4 border-red-600"
-              />
-              <p className="text-gray-600 italic">"{testimonial.review}"</p>
-              <h3 className="mt-4 font-semibold text-gray-800">{testimonial.name}</h3>
+              <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
+              <p className="testimonial-text">"{testimonial.review}"</p>
+              <h3 className="testimonial-name">{testimonial.name}</h3>
             </motion.div>
           ))}
         </div>
