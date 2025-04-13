@@ -1,11 +1,11 @@
 /* General Navbar Styles */
 .navbar {
-  position: absolute;
+  /* position: relative; */
   top: 0;
   left: 0;
   width: 100%;
   background-color: #01081a;
-  padding: 10px 20px;
+  padding: 1px 5px;
   z-index: 1000;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
@@ -32,7 +32,7 @@
 
 /* Logo */
 .logo {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
@@ -50,7 +50,7 @@
 .nav-links li a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   transition: color 0.3s ease-in-out;
 }
 

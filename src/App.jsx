@@ -7,8 +7,9 @@ import Services from './components/Services';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Join from "./pages/Join";
+import Trainers from "./components/Trainers";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Hero />
             <About />
             <Services />
+            <Trainers />
             <Testimonials />
             <Contact />
             <Footer />
